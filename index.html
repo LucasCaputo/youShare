@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youShare</title>
+    <style>
+
+        button{
+            border: none;
+        }
+
+        .btn-blue{
+            cursor: pointer;
+            background-color: #6199b3;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-background-none{
+            background: none;
+            color: #6199b3;
+            
+        }
+
+        p a {
+            color: #25282B;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .hide{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="you-share-banner.jpg" alt="banner-you-share" style="width: 100vh">
+    <div>
+        <button class="btn-blue">+ Indicar Oportunidades!!</button>
+        <button class="btn-background-none">Ver Indicações</button>
+    </div>
+    <p id="footer"> <a href="http://lucascaputo.dev" target="blank"> LucasCaputo.Dev 🚀 </a></p>
+
+    <script>
+        document
+            .querySelector("button.btn-blue")
+            .addEventListener("click", () =>{ 
+                document
+                    .querySelector("#footer")
+                    .classList
+                    .toggle("hide")
+            })
+    </script>
+</body>
+</html>
