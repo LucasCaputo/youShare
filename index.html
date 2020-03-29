@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>youShare</title>
-    <style>
+    <link rel="stylesheet" href="style.css">
 
-        button{
-            border: none;
-        }
+<body> 
 
-        .btn-blue{
-            cursor: pointer;
-            background-color: #6199b3;
-            color: white;
-            font-weight: bold;
-        }
+    <div id="container">
+        <section class="intro">
+            <div class="intro-content">
+                <header><h1><a href="index.html">YouShare</a></h1></header>
+                <div class="buttons">
+                    <button class="btn-background-none">Ver Indicações</button>
+                    <button class="btn-blue">+ Indicar Oportunidade</button>
+                </div>                
+            </div>
 
-        .btn-background-none{
-            background: none;
-            color: #6199b3;
+        </section>
+
+        <secttion id="last-opportunities">
+            <div class="opportunities">
+                <img 
+                    src="https://image.flaticon.com/icons/svg/2728/2728995.svg" 
+                    alt="">
+                <div id="content">
+                    <h3>Marketing para vendas on-line</h3>
+                    <p>Estudos</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur, laborum iste voluptatum aut fuga, ab sint odit quisquam nam, placeat at repellat. Labore, officia quam. Mollitia provident odit enim?
+                    </div>
+                    <a href="#">Veja Mais</a>
+                </div>
+            </div>
+
+            <div class="opportunities">
+                <img 
+                    src=" https://image.flaticon.com/icons/svg/2729/2729017.svg" 
+                    alt="">
+                <div id="content">
+                    <h3>WorkShop de Jardinagem</h3>
+                    <p>Casa e Jardim</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur, laborum iste voluptatum aut fuga, ab sint odit quisquam nam, placeat at repellat. Labore, officia quam. Mollitia provident odit enim?
+                    </div>
+                    <a href="#">Veja Mais</a>
+                </div>
+            </div>
+
+            <div class="opportunities">
+                <img 
+                    src="  https://image.flaticon.com/icons/svg/2729/2729013.svg" 
+                    alt="">
+                <div id="content">
+                    <h3>Live: Cozinha Vegana</h3>
+                    <p>Alimentação</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur, laborum iste voluptatum aut fuga, ab sint odit quisquam nam, placeat at repellat. Labore, officia quam. Mollitia provident odit enim?
+                    </div>
+                    <a href="#">Veja Mais</a>
+                </div>
+            </div>
+
             
-        }
-
-        p a {
-            color: #25282B;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .hide{
-            display: none;
-        }
-
-
-    </style>
-</head>
-<body>
-    <img src="you-share-banner.jpg" alt="banner-you-share" style="width: 100vh">
-    <div>
-        <button class="btn-blue">+ Indicar Oportunidades!!</button>
-        <button class="btn-background-none">Ver Indicações</button>
+        </secttion>
     </div>
-    <p id="footer"> <a href="http://lucascaputo.dev" target="blank"> LucasCaputo.Dev 🚀 </a></p>
 
-    <script>
-        document
-            .querySelector("button.btn-blue")
-            .addEventListener("click", () =>{ 
-                document
-                    .querySelector("#footer")
-                    .classList
-                    .toggle("hide")
-            })
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>

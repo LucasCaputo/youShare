@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.intro{
+    background-image: url(you-share-banner.jpg);
+    padding: 20px;
+    min-width: 450px;
+}
+
+.intro-content{
+    flex-direction: column;   
+}
+
+#last-opportunities{
+    margin: 10px 25px 0 25px;
+    display: flex;
+    flex-direction: column;
+    float: right;;
+}
+
+.opportunities{
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 10px 40px rgba(30, 231, 198, 0.12); 
+    border: 1px solid rgba(30, 231, 198, 0.281);  
+    overflow: hidden;
+    width: auto;
+    min-height: 150px;
+}
+
+.opportunities img{
+    width: 80px;      
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 8px 0 32px;
+}
+
+h1 a{
+    color: rgba(7, 26, 26, 0.9);
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+h1 a:hover{
+    color: white;
+    font-size: 25px;
+}
+
+p{
+    font-size: 14px;
+    opacity: 0.8;
+    padding-bottom: 8px;
+    color: rgba(2, 8, 8, 0.9);
+}
+
+.description{
+    font-size: 14px;
+    padding-bottom: 8px;
+    color: rgba(13, 139, 139, 0.9);
+}
+
+#content a{
+    margin-left: auto;
+    padding-top: auto;
+    cursor: pointer;
+    border: none;
+    background-color: #6199b3;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 15px;
+    width: 150px;;
+    justify-content: center;
+}
+
+#content a:hover{
+    color: #6199b3;
+    background-color: white;
+    transition: 500ms;
+    border: 2px solid #6199b3;
+}
+
+@media (max-width: 860px){
+  
+    
+    #container{
+        display: flex;
+        flex-direction: column;    
+    } 
+
+    .opportunities{
+        margin: 0 10px 0 10px;
+        margin-bottom: 1%;
+    }
+
+    footer a{
+        display: none;
+    }
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: #6199b3;
+    color: white;
+    font-weight: bolder;
+    height: 50px;
+    border-radius: 33px;
+    width: 185px;
+    justify-content: center;
+}
+
+.buttons{
+    margin-top: 550px;
+    width: 464px;
+    justify-content: space-between;
+}
+
+button:hover{
+    color: #6199b3;
+    background-color: white;
+    transition: 500ms;
+}
+
+.hide{
+    display: none;
+}
