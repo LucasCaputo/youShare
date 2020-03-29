@@ -10,8 +10,10 @@
 
 .intro{
     background-image: url(you-share-banner.jpg);
+    background-size: cover;
+    background-position: 0em;
     padding: 20px;
-    min-width: 450px;
+   
 }
 
 .intro-content{
@@ -43,6 +45,7 @@
     display: flex;
     flex-direction: column;
     margin: 8px 8px 0 32px;
+    justify-content: left;
 }
 
 h1 a{
@@ -91,7 +94,15 @@ p{
     border: 2px solid #6199b3;
 }
 
-@media (max-width: 860px){
+
+@media (max-width: 900px){
+
+    .intro{
+        background-position: 0em;
+        min-height: 330px;
+        background-size: cover;
+        transition: 800ms;
+    }
   
     
     #container{
@@ -104,9 +115,25 @@ p{
         margin-bottom: 1%;
     }
 
-    footer a{
-        display: none;
+    .buttons{
+        width: 80vw;
+        justify-content: space-between;
+       
     }
+}
+
+@media(min-width:1200px){
+    body{
+        margin: 0 auto 0 auto;
+    }
+
+    #last-opportunities{
+        max-width: 800px;
+    }
+
+    
+
+    
 }
 
 button{
@@ -118,13 +145,13 @@ button{
     height: 50px;
     border-radius: 33px;
     width: 185px;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .buttons{
-    margin-top: 550px;
-    width: 464px;
-    justify-content: space-between;
+    padding: 70vh 5% 5% 5%;  
+    
+
 }
 
 button:hover{
