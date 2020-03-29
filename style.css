@@ -17,24 +17,29 @@
 }
 
 .intro-content{
+    width: 100%;
     flex-direction: column;   
+    min-width: 350px;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 #last-opportunities{
-    margin: 10px 25px 0 25px;
+    margin: 2% auto;
     display: flex;
     flex-direction: column;
     float: right;;
 }
 
 .opportunities{
-    margin: auto;
+    margin: 10px;
     padding: 10px;
     box-shadow: 0 10px 40px rgba(30, 231, 198, 0.12); 
     border: 1px solid rgba(30, 231, 198, 0.281);  
     overflow: hidden;
     width: auto;
     min-height: 150px;
+
 }
 
 .opportunities img{
@@ -49,7 +54,7 @@
 }
 
 h1 a{
-    color: rgba(7, 26, 26, 0.9);
+    color: rgba(7, 26, 26, 0.842);
     border-bottom: 1px solid #fff;
     cursor: pointer;
 }
@@ -99,7 +104,7 @@ p{
 
     .intro{
         background-position: 0em;
-        min-height: 330px;
+        min-height: 350px;
         background-size: cover;
         transition: 800ms;
     }
@@ -115,10 +120,13 @@ p{
         margin-bottom: 1%;
     }
 
-    .buttons{
-        width: 80vw;
-        justify-content: space-between;
-       
+    #modal{
+        position: absolute;
+        min-width: 100vw;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 }
 
@@ -130,10 +138,6 @@ p{
     #last-opportunities{
         max-width: 800px;
     }
-
-    
-
-    
 }
 
 button{
@@ -143,13 +147,16 @@ button{
     color: white;
     font-weight: bolder;
     height: 50px;
+    padding: 0 3% 0 3%;
     border-radius: 33px;
-    width: 185px;
     justify-content: center;    
 }
 
 .buttons{
-    padding: 70vh 5% 5% 5%;  
+    padding: 0;  
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between; 
     
 
 }
@@ -160,6 +167,82 @@ button:hover{
     transition: 500ms;
 }
 
-.hide{
+/*--------------------------------MODAL----------------------------------------------*/
+
+#modal{
+    background-color: #2ebbaf;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     display: none;
+}
+
+.content{
+    flex-direction: column;
+    width: 100%; 
+}
+
+form{
+    flex-direction: column;
+    padding: 5%;
+    width: -webkit-fill-available;
+}
+
+h1{
+    padding: 10px;
+    margin: 10px;
+    font-size: 28px;
+    color: #05090ac7;
+}
+
+.input-wrapper{
+    flex-direction: column;
+    padding-bottom: 10px;
+
+}
+
+button{
+    align-items: flex-start;
+}
+
+.modal-header{
+    flex-direction: row;
+}
+
+#back{
+    width: 20px;
+    padding: 20px;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+#back:hover{
+    width: 25px;
+}
+
+.btn-form{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.btn-none{
+    background-color: #2ebbafde;
+    border: 1px solid white;
+}
+
+.btn-none:hover{
+    background-color: #6199b3;
+    color: white;
+}
+
+.btn-form button{
+    min-width: 100px;;
+}
+
+#modal.hide{
+    display: flex;
 }

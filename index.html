@@ -12,8 +12,8 @@
             <div class="intro-content">
                 <header><h1><a href="index.html">YouShare</a></h1></header>
                 <div class="buttons">
-                    <button class="btn-background-none">Ver Indicações</button>
-                    <button class="btn-blue">+ Indicar Oportunidade</button>
+                    <button>Ver Indicações</button>
+                    <button id="btn-add">+ Indicar Oportunidade</button>
                 </div>                
             </div>
 
@@ -64,6 +64,50 @@
 
             
         </secttion>
+    </div>
+
+    <!--Dialog-->
+
+    <div id="modal">
+        <div class="content">
+            <div class="modal-header">
+                <img id="back" src="back-icon.svg" alt="back-icon">
+                <h1>Compartilhar Oportunidade</h1>
+            </div>
+    
+            <form action="">
+                <div class="input-wrapper">
+                    <label for="title">Título</label>
+                    <input type="text" name=title>
+                </div>
+    
+                <div class="input-wrapper">                   
+                    <label for="category">Categoria</label>
+                    <input type="text" name=category>
+                </div>
+
+                <div class="input-wrapper"> 
+                    <label for="image">Foto</label>
+                    <input type="url" name=image>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Publicação</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper"> 
+                    <label for="link">Link da Oportunidade</label>
+                    <input type="url" name=link>
+                </div>
+
+                <div class="btn-form"> 
+                    <button id="back" class="btn-none">Voltar</button>
+                    <button>Compartilhar</button>
+                </div>
+               
+            </form>
+        </div>
     </div>
 
     <script src="scripts.js"></script>
