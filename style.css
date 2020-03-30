@@ -47,6 +47,7 @@
 }
 
 #content{
+    font-family: 'Roboto', sans-serif; 
     display: flex;
     flex-direction: column;
     margin: 8px 8px 0 32px;
@@ -116,16 +117,11 @@ p{
     } 
 
     .opportunities{
-        margin: 0 10px 0 10px;
-        margin-bottom: 1%;
+        margin: 0 1% 1% 1%;
     }
 
-    #modal{
-        position: absolute;
-        min-width: 100vw;
-        top: 0;
-        bottom: 0;
-        right: 0;
+    body #modal{
+        position: fixed;
         left: 0;
     }
 }
@@ -155,7 +151,7 @@ button{
 .buttons{
     padding: 0;  
     flex-direction: row;
-    width: 100%;
+    min-width: 90%;
     justify-content: space-between; 
     
 
@@ -171,19 +167,18 @@ button:hover{
 
 #modal{
     background-color: #2ebbaf;
-    width: 450px;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
     display: none;
 }
 
 .content{
     flex-direction: column;
-    width: 100%; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form{
@@ -215,7 +210,6 @@ button{
 
 #back{
     width: 20px;
-    padding: 20px;
     align-items: flex-end;
     cursor: pointer;
 }

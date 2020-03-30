@@ -1,5 +1,5 @@
 document
-.querySelector("#btn-add", "#back")
+.querySelector("#btn-add")
 .addEventListener("click", () =>{ 
     document
         .querySelector("#modal")
